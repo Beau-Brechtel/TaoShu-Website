@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Dr. Tao Shu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Centered Navbar -->
+    <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html#old-news">News</a></li>
+            <li><a href="grants.html">Grants</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="research.html">Research</a></li>
+        </ul>
+    </nav>
+
+    <!-- News Section -->
+    <section class="news">
+        <h2 class="underline">News</h2>
+        <div class="latest-news">
+            <div class="news-card">
+                <img src="taoshupic2.png" >
+                <div class="news-content">
+                    <h3>Professor in Computer Science Develops Method to Cyber Protect Satellites</h3>
+                    <p><strong>Date:</strong> October 2023</p>
+                    <p>Professor Tao Shu's NSF-funded project will randomly scatter pieces of code from one satellite to another, creating a logistical nightmare for would-be hackers.</p>
+                    <a href="https://eng.auburn.edu/news/2023/10/professor-in-computer-science-develops-method-to-cyber-protect-satellites" target="_blank">Read more</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="auburnpic.png">
+                <div class="news-content">
+                    <h3>Promotion and Tenure List</h3>
+                    <p><strong>Date:</strong> May 2020</p>
+                    <p>Auburn University Provost Bill Hardgrave has announced the names of faculty who have been awarded promotion, tenure, or both at Auburn University for 2020. Eight engineering faculty members were named to the list.</p>
+                    <a href="https://eng.auburn.edu/news/2020/05/promotion-tenure-list" target="_blank">Read more</a>
+                </div>
+            </div>
+        </div>
+        <!-- Old News Section -->
+        <div id="old-news" class="old-news">
+            <h3 class="underline">Old News</h3>
+            <div class="news-item">
+                <p><strong>[08/2023]</strong> NSF awarded us new grant on building resilience into LEO satellite networks. We are very grateful for the generous and continuous support from NSF!</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[09/2020]</strong> NSF awarded us new grant on privacy-preserving context-based routing in Internet of Things (IoT).</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[06/2020]</strong> Invited to serve on TPC of INFOCOM 2021.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[06/2020]</strong> NSF awarded us supplemental Research Experiences for Undergraduates (REU) fund for our mmWave micro mobility management project.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[04/2019]</strong> Invited to serve on TPC of INFOCOM 2020.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[08/2018]</strong> NSF awarded us new grant for predictive micro mobility management in mmWave cellular networks.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[04/2018]</strong> Invited to serve on TPC of INFOCOM 2019.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[07/2017]</strong> NSF awarded us grant on securing visible light communications.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[03/2017]</strong> Invited to serve on TPC of INFOCOM 2018.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[03/2017]</strong> Invited to serve on TPC of IEEE CloudCom 2017.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[02/2017]</strong> Serving as Associate Editor for IEEE Transactions on Mobile Computing (TMC).</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[10/2016]</strong> Invited to serve on TPC of ICCCN 2017.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[08/2016]</strong> Joined the Computer Science and Software Engineering Department of Auburn University.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[05/2016]</strong> Serving as TPC co-chair for the Ad Hoc and Sensor Network (AHSN) Symposium of Globecom 2017.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[05/2016]</strong> Oakland University School of Engineering and Computer Science (SECS) Outstanding Research Award.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[04/2016]</strong> Oakland University Faculty Recognition for Excellence in Research.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[03/2016]</strong> Invited to serve on TPC of INFOCOM 2017.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[02/2017]</strong> Invited to serve on TPC of WCNC 2017.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[01/2016]</strong> INFOCOM 2016 Distinguished TPC Member Award.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>[09/2015]</strong> NSF awarded our project on network economics for secondary spectrum ecosystems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <h3>Contact Information</h3>
+        <p>Dr. Tao Shu</p>
+        <p>Associate Professor</p>
+        <p>3101K Shelby Center, Auburn University</p>
+        <p>Department of Computer Science and Software Engineering</p>
+        <p>Auburn, AL 36849</p>
+        <p>Phone: (334) 844-5170</p>
+        <p>Email: <a href="mailto:tshu@auburn.edu">tshu@auburn.edu</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

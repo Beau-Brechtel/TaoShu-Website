@@ -1,0 +1,302 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #ffffff;  
+    --secondary-color: #f4f4f4;  
+    --accent-blue: #002855; 
+    --accent-orange: #ff8200; 
+    --text-color: #333; 
+}
+
+/* Font Family */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-orange);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--accent-blue);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 40px;
+    background: var(--accent-blue);
+    min-height: 60vh;
+    margin-top: 60px;
+    color: white;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 300px;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.hero-heading {
+    font-size: 3.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Biography Section */
+.biography {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.biography h2 {
+    font-size: 2em;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.biography p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.footer h3 {
+    font-size: 1.5em;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.footer a {
+    color: var(--accent-orange);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffd700;
+}
+
+/* Underline Effect */
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 3px; 
+    background-color: var(--accent-orange); 
+}
+
+/* News Section */
+.news {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.news h2 {
+    font-size: 4em;
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+}
+
+.latest-news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--accent-blue);
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 3em;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.news-content a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-content a:hover {
+    color: #e67a00;
+}
+
+/* Old News Section */
+.old-news {
+    margin-top: 40px;
+}
+
+.old-news h3 {
+    font-size: 1.8em;
+    color: var(--accent-blue);
+    margin-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .hero-image, .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-top: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .news-card {
+        flex-direction: column;
+    }
+}
