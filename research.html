@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research - Dr. Shu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style the body */
+        .research {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 250px;
+            text-align: center;
+            background: url("shuworking.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 100px;
+        }
+        .research h2 {
+            font-size: 2em;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Column container */
+        .row {  
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Main column */
+        .main {   
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide */
+        @media screen and (max-width: 700px) {
+            .row {   
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .text-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .text-wrapper p {
+            font-size: 1.1em;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .text-wrapper ul {
+            font-size: 1.1em;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html#old-news">News</a></li>
+        <li><a href="grants.html">Grants</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="research.html">Research</a></li>
+    </ul>
+</nav>
+
+<div class="header">
+    <h1 style="font-size: 100px">Research</h1>
+</div>
+
+<div class="row">
+    <div class="main">
+        <div class="text-wrapper">
+            <br>
+            <h1 style="text-align:center;">Research Aims</h1>
+                <br>
+                <p>My research aims at addressing the security, privacy, and performance issues in wireless networking systems, with strong emphasis on system architecture, protocol design, and performance optimization.  My research interests span a broad range of problems, including applied cryptography, information assurance, network security and privacy, truthful mechanism design, dynamic spectrum access, radio resource management, routing/ MAC protocol design, and cloud computing.</p>
+                <br>
+                <p>My research covers a wide variety of wireless systems, including mmWave networks, cognitive radio networks, wireless sensor networks, mobile ad hoc networks, and cellular networks. I have published over 60 refereed papers in above areas on top journals and conferences, including IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Wireless Communication, IEEE Journal on Selected Areas in Communications, ACM MobiCom, ACM MobiHoc, and IEEE INFOCOM.</p>
+                <br>
+                <p>Computer networks design, including multiplexing, switching, routing, internetworking, transport protocols, congestion control, and performance evaluation.</p>
+                <br>
+                <br>
+        </div>
+
+        <div class="text-wrapper">
+            <h1 style="text-align:center;">Research Areas</h1>
+            <br>
+            <ul style="padding-left:30px">
+                <li>Network security and privacy</li>
+                <li>Applied cryptography</li>
+                <li>Big data oriented network information processing and protocol design</li>
+                <li>Wireless networking</li>
+                <li>Network economics</li>
+            </ul>
+            <br>
+            <br>
+        </div>
+
+        <div class="text-wrapper">
+            <h1 style="text-align:center;">Research Institutions</h1>
+            <br>
+            <p>I gratefully thank the following organizations for their generous support to my research:</p>
+
+            <br>
+            <ul style="padding-left:30px">
+                <li> National Science Foundation</li>
+                <li>Auburn University</li>
+                <li>Oakland University</li>
+            </ul>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <h3>Contact Information</h3>
+    <p>Dr. Tao Shu</p>
+    <p>Associate Professor</p>
+    <p>3101K Shelby Center, Auburn University</p>
+    <p>Department of Computer Science and Software Engineering</p>
+    <p>Auburn, AL 36849</p>
+    <p>Phone: (334) 844-5170</p>
+    <p>Email: <a href="mailto:tshu@auburn.edu">tshu@auburn.edu</a></p>
+</footer>
+
+</body>
+</html>
